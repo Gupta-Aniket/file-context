@@ -15,11 +15,14 @@ This Python script recursively scans the current directory (excluding hidden fil
 
 ## Usage
 
-windows: 
+windows:
+
 ```bash
 python your_script_name.py
 ```
+
 mac
+
 ```bash
 python3 your_script_name.py
 ```
@@ -93,3 +96,15 @@ id,name
 
 * Hidden files and folders (starting with `.`) are automatically ignored.
 * Nested folders deeper than one level are currently not parsed in the selection logic.
+
+---
+
+## 🆕 Updates
+
+* Output file is now `fileContext.md` instead of `.txt`, written in **structured Markdown**.
+* Directory structure is shown using **tree-style formatting** under `## 📂 Project Structure`.
+* Each selected file is included as a **Markdown code block** with syntax highlighting based on file type.
+* File **paths are printed in terminal** while processing for visibility.
+* **Absolute path** of the final output file is printed after execution.
+* Files `fileContext.md`, `file_context.py`, and `file_dumper.py` are now **excluded** from scanning.
+* Added a friendly reminder to add **human + AI-readable comments** at the top of each file.
